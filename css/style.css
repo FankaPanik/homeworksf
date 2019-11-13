@@ -13,13 +13,13 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 1300px;
     margin: 0 auto;
 }
 
 /*.........................navbar...................*/
 .container_navbar {
-    width: 90%;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 37px 0;
+    padding: 37px 10px;
 }
 
 .logo {
@@ -101,7 +101,6 @@ body {
 
 .header__wrapper {
     width: 600px;
-    /*    margin-left: 10%;*/
     padding: 200px 0;
     position: relative;
 }
@@ -129,7 +128,7 @@ body {
     margin-bottom: 40px;
 }
 
-.header__btn {
+.button-header{
     padding: 20px 30px;
     margin-right: 20px;
     text-decoration: none;
@@ -140,9 +139,7 @@ body {
     background: url(../img/bg/bg-pr.png) bottom center;
     background-repeat: no-repeat;
     background-color: #131313;
-    ;
     background-size: cover;
-    height: 1100px;
     padding-bottom: 400px;
 }
 
@@ -268,21 +265,25 @@ body {
 /*........................control...................*/
 .control {
     background-color: #fff;
+    padding-bottom: 50%;
+}
+.container-control{
     position: relative;
-    padding-bottom: 800px;
 }
 
-.control__wrapper {
-    width: 920px;
-    margin: auto;
-    position: absolute;
-    transform: translate(20%, -32%);
+.titleIcon{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-
-.control__title {
+.titleIcon-control{
+    position: absolute;
+    bottom: 0;   
+    left: 50%;
+    transform: translate(-50%, -200%);
+}
+.titleIcon__title{
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     font-size: 20px;
@@ -290,31 +291,43 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
-.control__icon {
+.titleIcon__icon{
+    position: relative;
     text-align: center;
     display: inline-block;
 }
 
-.control__icon::after {
+.titleIcon__icon::after {
     content: "";
     background: #E3B873;
     width: 32px;
     height: 1px;
     position: absolute;
-    top: 9%;
-    left: 43%;
+    top: 50%;
+    left: 100%;
+    transform: translateX(50%);
 }
 
-.control__icon::before {
+.titleIcon__icon::before {
     content: "";
     background: #E3B873;
     width: 32px;
     height: 1px;
     position: absolute;
-    top: 9%;
-    right: 43%;
+    top: 50%;
+    right: 100%;
+    transform: translateX(-50%);
+}
+.control__wrapper {
+/*    width: 920px;*/
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translate(-50%, -20%);
 }
 .control__video{
     position: relative;    
@@ -342,6 +355,7 @@ body {
 
 .control__text {
     width: 680px;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 37px;
     text-align: center;
@@ -361,17 +375,20 @@ body {
     left: 45%;
 }
 .row{
-    display: flex;  
+    display: flex; 
+    justify-content: center;
 }
 .row__item{
-     display: flex;
+    display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 .input{
      border: none;
      font-size: 14px;
      font-family: 'Nunito Sans', sans-serif;
      outline: none;
+     background: transparent;
 }
 .span{
     font-size: 13px;
@@ -387,30 +404,20 @@ body {
     margin-right: 50px;
     color: #363636;
     padding-bottom: 8px;
-   
 }
 
 .feedback_span {
     color: rgba(54, 54, 54, 0.5);
 }
 
-
-.submit {
-    font-size: 13px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-weight: 600;
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    border: 1px solid #E3B873;
+.button-submit {
     padding: 17px 70px;
-    transition: 0.3s ease-out;
-    cursor: pointer;
 }
 
-.submit:hover {
+.button-submit-phone{
+    display: none;
+}
+.button-submit:hover {
     color: #E3B873;
     border: 1px solid #E3B873;
     background: transparent;
@@ -467,53 +474,14 @@ input:checked + label:before {
     margin-bottom: 400px;
 }
 
-.subtitle-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.types__subtitle {
+.titleIcon__title-dark{
     color: #181818;
-    font-family: 'Yeseva One', cursive;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 auto;
-    padding-bottom: 13px;
-}
-
-.types__icon {
-    text-align: center;
-    display: inline-block;
-    position: relative;
-}
-
-.types__icon::after {
-    content: "";
-    background: #E3B873;
-    width: 32px;
-    height: 1px;
-    position: absolute;
-    top: 35%;
-    left: 45%;
-}
-
-.types__icon::before {
-    content: "";
-    background: #E3B873;
-    width: 32px;
-    height: 1px;
-    position: absolute;
-    top: 35%;
-    right: 45%;
 }
 
 .types__wrapper {
     display: flex;
     justify-content: space-between;
+/*    flex-wrap: wrap;*/
     margin-top: 30px;
 }
 
@@ -543,8 +511,6 @@ input:checked + label:before {
     padding-bottom: 50px;
     margin: 0;
 }
-
-.types-list ul {}
 
 .types-list li {
     font-size: 13px;
@@ -677,12 +643,12 @@ input:checked + label:before {
     color: #FFFFFF;
 }
 
-.call__submit{
+.button-submit-call{
     padding: 20px 22px;
     margin-top: -100px;
     align-self: flex-end;
 }
-.call__submit:hover{
+.button-submit-call:hover{
     color: #fff;
     border: 1px solid #fff;
 }
@@ -767,9 +733,12 @@ input:checked + label:before {
 .col-img-2{
     margin-top: -100px;
 }
+.col-img-phone{
+    display: none;
+}
 /*................................price....................................*/
 .price{
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .price__text {
@@ -851,7 +820,7 @@ input:checked + label:before {
     color: #FFFFFF;
 }
 .goal__photo{
-    width: 750px;
+    width: 100%;
 }
 /*..................................team................................*/
 
@@ -864,7 +833,7 @@ input:checked + label:before {
 }
 .team__wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 140px auto;
 }
 .team__item{
@@ -931,7 +900,7 @@ input:checked + label:before {
 }
 .reviews__wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .reviews__item{
     width: 380px;
@@ -997,16 +966,19 @@ input:checked + label:before {
 }
 /*..........................questions.........................*/
 .questions{
-    position: relative;
+    
 }
 .questions__container{
-    max-width: 880px;
+    position: relative;
+}
+.questions__wrapper{
+    width: 880px;
     margin: 0 auto;
     background: #131313;
     position: absolute;
     bottom: 0;
-    left: 0;
-    transform: translate(35%, 60%);
+    left: 50%;
+    transform: translate(-50%, 60%);
     z-index: 2;
 }
 .form__wrapper{
@@ -1039,17 +1011,15 @@ input:checked + label:before {
     margin-bottom: 50px;
 }
 
-.questions-submit{
-    width: 200px;
-    display: inline-block;
-    margin-top: 50px;
-}
 .questions-checkbox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 35px;
+}
+.questions-description{
+    margin-bottom: 50px;
 }
 /*...............................map.............................*/
 .map{
