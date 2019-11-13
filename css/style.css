@@ -17,6 +17,17 @@ body {
     margin: 0 auto;
 }
 
+.title{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin: 0;
+}
+.text {
+    color: #FFFFFF;
+    line-height: 1.8;
+}
 /*.........................navbar...................*/
 .container_navbar {
     width: 1400px;
@@ -106,13 +117,8 @@ body {
 }
 
 .header__title {
-    font-family: 'Yeseva One', cursive;
     font-size: 40px;
-    font-weight: 400;
-    line-height: 53px;
-    text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0;
 }
 
 .header__title span {
@@ -160,30 +166,23 @@ body {
 }
 
 .projects__title {
-    font-family: 'Yeseva One', cursive;
-    font-weight: 400;
     font-size: 27px;
-    line-height: 37px;
-    text-transform: uppercase;
     color: #E3B873;
     position: relative;
 }
 
-.pr__after::after {
+.projects__title::after {
     content: "";
     background: #E3B873;
     width: 92px;
     height: 1px;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 45%;
 }
-.text {
-    color: #FFFFFF;
-}
+
 .projects__text {
     font-size: 14px;
-    line-height: 27px;
 }
 
 .pr__info {
@@ -198,6 +197,7 @@ body {
 
 .pr__info-title {
     font-size: 18px;
+    color: #E3B873;
 }
 
 .pr__info-text {
@@ -253,9 +253,11 @@ body {
 
 .pr__tab {
     font-size: 14px;
+    color: #E3B873;
     margin-right: 7%;
     border-bottom: 1px solid #131313;
     transition: 0.3s ease-out;
+    margin-bottom: 35px;
 }
 
 .pr__tab:hover {
@@ -265,10 +267,18 @@ body {
 /*........................control...................*/
 .control {
     background-color: #fff;
-    padding-bottom: 50%;
+    margin-bottom:  800px;
+    position: relative;
 }
 .container-control{
+/*
     position: relative;
+    height: 100%;
+*/
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translate(-50%, -20%);
 }
 
 .titleIcon{
@@ -279,9 +289,9 @@ body {
 }
 .titleIcon-control{
     position: absolute;
-    bottom: 0;   
+    bottom: 100%;   
     left: 50%;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -5%);
 }
 .titleIcon__title{
     font-family: 'Yeseva One', cursive;
@@ -322,12 +332,14 @@ body {
     transform: translateX(-50%);
 }
 .control__wrapper {
-/*    width: 920px;*/
+    max-width: 1000px;
     margin: 0 auto;
+/*
     position: absolute;
     top: 0;
     left: 50%; 
     transform: translate(-50%, -20%);
+*/
 }
 .control__video{
     position: relative;    
@@ -357,7 +369,6 @@ body {
     width: 680px;
     margin: 0 auto;
     font-size: 18px;
-    line-height: 37px;
     text-align: center;
     color: #363636;
     padding-top: 60px;
@@ -687,11 +698,7 @@ input:checked + label:before {
     justify-content: space-around;
 }
 .work__col-title{
-    font-family: 'Yeseva One', cursive;
-    font-weight: 400;
     font-size: 27px;
-    line-height: 37px;
-    text-transform: uppercase;
     color: #E3B873;
     margin-top: 140px;
     width: 80%;
