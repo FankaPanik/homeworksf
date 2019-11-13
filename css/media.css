@@ -24,14 +24,7 @@
 
 
 @media screen and (max-width: 1024px) {
-    .navbar__num a{
-        color: #fff;
-        text-decoration: none;
-        transition: 0.3s ease-out;
-    }
-    .navbar__num a:hover{
-        opacity: 0.7;
-    }
+    
     .navbar__button {
         display: none;
     }
@@ -40,9 +33,12 @@
         width: 60%;
     }
      
+/*
     .projects{
-        padding-bottom: 150px;
+        margin-bottom: 500px;
+        height: 100%;
     }
+*/
     .projects__wrapper {
         flex-direction: column;
         justify-content: center;
@@ -65,7 +61,7 @@
         margin: 0 auto;
     }
 
-    .pr__after::after {
+    .projects__title::after {
         display: none;
     }
 
@@ -75,19 +71,24 @@
 
     .control {
         background: #131313;
-       padding-bottom: 0;
+        background-size: cover;
+        padding-bottom: 0;
+        min-height: 800px;
+        margin-bottom: 50px;
     }
-
+     
+/*
     .titleIcon-control {
-        transform: translate(-50%, -60%);
-        top: 0;
+        bottom: 50%;
+        transform:  translate(-50%, -245%);
     }
 
     .control__wrapper {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -3%);
+        transform: translate(-50%, -22%);
     }
+*/
 
     .control__text,
     .feedback_input,
@@ -193,11 +194,19 @@
     .menu {
         display: none;
     }
-
+   
     .navbar__wrapper {
         justify-content: space-around;
     }
-
+    
+    .navbar__num a{
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s ease-out;
+    }
+    .navbar__num a:hover{
+        opacity: 0.7;
+    }
     .header__wrapper {
         width: 100%;
         margin: auto;
@@ -352,6 +361,9 @@
 
 
 @media screen and (max-width: 520px) {
+    .text{
+        width: 100%;
+    }
     .header__wrapper{
         padding: 85px 0;
     }
@@ -371,7 +383,7 @@
     }
     .projects{
         height: 100%;
-        padding-bottom: 200px;
+        padding-bottom: 300px;
     }
     .projects__title{
         font-size: 22px;
@@ -453,6 +465,9 @@
     }
     .control__text{
         margin-bottom: 30px;
+    }
+    .control__text::after{
+        left: 40%;
     }
     .types__item{
         margin-top: 300px;
