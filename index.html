@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="yandex-verification" content="125fcf6a1c88b0b0" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -14,53 +13,53 @@
 </head>
 
 <body>
-    <section class="navbar">
+    <header class="navbar">
         <div class="container_navbar">
             <div class="navbar__wrapper">
                 <div class="logo">
                     IC "Repair Design Project"
                 </div>
                 <div class="menu">
-                    <div class="menu__item">
-                        <a class="menu__item-link" href="#">HOME</a>
-                        <a class="menu__item-link" href="#">PROJECTS</a>
-                        <a class="menu__item-link" href="#">MEASUREMENT</a>
-                        <a class="menu__item-link" href="#">TEAM</a>
-                        <a class="menu__item-link" href="#">REVIEWS</a>
-                        <a class="menu__item-link" href="#">CONTACTS</a>
-                    </div>
+                    <ul class="menu__item">
+                        <li class="menu__item-link" href="#">HOME</li>
+                        <li class="menu__item-link" href="#">PROJECTS</li>
+                        <li class="menu__item-link" href="#">MEASUREMENT</li>
+                        <li class="menu__item-link" href="#">TEAM</li>
+                        <li class="menu__item-link" href="#">REVIEWS</li>
+                        <li class="menu__item-link" href="#">CONTACTS</li>
+                    </ul>
                 </div>
                 <div class="navbar__num">
                     <a href="#">+7 (928) 768-32-39</a>
                 </div>
                 <div class="navbar__button">
-                <a class="button " href="#">
+                <button class="button " href="#">
                     Request a call
-                </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <h1 class="title header__title">
-                    Turnkey Repair in the city of <span>Rostov-on-Don</span>
-                </h1>
-                <p class="text header__text">
-                    Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
-                </p>
-                <div class="header__button">
-                    <a class="button button-header" href="#">
-                        CALCULATE THE COST
-                    </a>
-                    <a class="button button-header" href="#">
-                        SUBMIT YOUR APPLICATION
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
+    <div class="block__head">
+        <div class="container">
+            <div class="block__wrapper">
+                <h1 class="title block__title">
+                    Turnkey Repair in the city of <span>Rostov-on-Don</span>
+                </h1>
+                <p class="text block__text">
+                    Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
+                </p>
+                <div class="block__button">
+                    <button class="button button-block" href="#">
+                        CALCULATE THE COST
+                    </button>
+                    <button class="button button-block" href="#">
+                        SUBMIT YOUR APPLICATION
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="projects">
         <div class="container">
             <div class="projects__wrapper">
@@ -117,15 +116,15 @@
                 </div>
                 <div class="projects__item-right">
                     <div class="pr__info-tab">
-                        <h4 class="title pr__tab">
+                        <a href="#" class="title pr__tab">
                             Rostov-on-Don, Admiral
-                        </h4>
-                        <h4 class="title pr__tab">
+                        </a>
+                        <a href="#" class="title pr__tab">
                             Sochi Thieves
-                        </h4>
-                        <h4 class="title pr__tab">
+                        </a>
+                        <a href="#" class="title pr__tab">
                             Rostov-on-Don Patriotic
-                        </h4>
+                        </a>
                     </div>
                     <div class="pr__info-photo">
                         <img src="img/photo/RD-admiral.png" alt="RD-admiral">
@@ -176,7 +175,9 @@
                             </span>
                         </label>
                     </div>
-                    <input class="button button-submit-phone" type="submit" value="submit">
+                    <button class="button button-submit-phone">
+                    submit
+                    </button>
                 </form>
             </div>
         </div>
@@ -307,7 +308,9 @@
                                      </label>
                                 </div>
                                 </div>
-                            <input class="button button-submit button-submit-call" type="submit" value="Call the measurer">
+                                <button class="button button-submit button-submit-call">
+                               Call the measurer
+                              </button>
                         </form>
                     </div>
 
@@ -737,7 +740,9 @@
                                 I agree to the processing of personal data
                             </span>
                         </label>
-                        <input class="button button-submit button-submit-questions" type="submit" value="Submit">
+                        <button class="button button-submit button-submit-questions">
+                        Submit
+                        </button>
                     </div>
                 </form>
             </div>
@@ -752,15 +757,17 @@
                 <div class="map__item map__item-social">
                     <h6 class="goal__text-title">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
                         Decorum Tel +7 (928) 768 32 29</h6>
-                    <div class="map-icons">
-                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </div>
+                    <div class="map-icon">
+                        <a href="#"><img src="img/icons/mail.svg" alt="mail"></a>
+                        </div>
+                        <div class="map-icon">
+                        <a href="#"><img src="img/icons/instagram.svg" alt="instagram"></a>
                 </div>
                 <div class="map__item map__item-img">
                     <img src="img/photo/map.jpg" alt="">
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <footer class="footer">
@@ -770,22 +777,22 @@
                     IC "Repair Design Project"
                 </div>
                 <div class="menu">
-                    <div class="menu__item">
-                        <a class="menu__item-link" href="#">HOME</a>
-                        <a class="menu__item-link" href="#">PROJECTS</a>
-                        <a class="menu__item-link" href="#">MEASUREMENT</a>
-                        <a class="menu__item-link" href="#">TEAM</a>
-                        <a class="menu__item-link" href="#">REVIEWS</a>
-                        <a class="menu__item-link" href="#">CONTACTS</a>
-                    </div>
+                      <ul class="menu__item">
+                        <li class="menu__item-link" href="#">HOME</li>
+                        <li class="menu__item-link" href="#">PROJECTS</li>
+                        <li class="menu__item-link" href="#">MEASUREMENT</li>
+                        <li class="menu__item-link" href="#">TEAM</li>
+                        <li class="menu__item-link" href="#">REVIEWS</li>
+                        <li class="menu__item-link" href="#">CONTACTS</li>
+                    </ul>
                 </div>
                 <div class="navbar__num">
                     <a href="#">+7 (928) 768-32-39</a>
                 </div>
                 <div class="navbar__button">
-                <a class="button" href="#">
+                <button class="button" href="#">
                     Request a call
-                </a>
+                    </button>
                 </div>
             </div>
         </div>
