@@ -362,6 +362,10 @@
 
 
 @media screen and (max-width: 520px) {
+    .logo,
+    .navbar__num a {
+        font-size: 10px;
+    }
     .text {
         width: 100%;
     }
@@ -464,10 +468,7 @@
         justify-content: space-between;
     }
 
-    .logo,
-    .navbar__num a {
-        font-size: 10px;
-    }
+    
 
     .control__text {
         margin-bottom: 30px;
