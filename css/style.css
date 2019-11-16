@@ -742,18 +742,20 @@ input:checked + label:before {
     margin-top: 140px;
     width: 80%;
 }
-
-.work__col-list {
+.work__col-list{
+    padding-left: 0;
+}
+.work__col-list li{
     display: inline-block;
-    padding: 0;
     width: 50%;
+    margin-bottom: 25px;
 }
 
-.work__col-list a {
+.work__col-list li a {
     text-decoration: none;
 }
 
-.work__col-list > a > li {
+.work__col-list > li > a {
     font-size: 20px;
     color: #FFFFFF;
     list-style: none;
@@ -762,7 +764,7 @@ input:checked + label:before {
     border-bottom: 1px solid transparent;
 }
 
-.work__col-list > a > li:hover {
+.work__col-list > li > a:hover {
     border-bottom: 1px solid #E3B873;
     color: #E3B873;
     cursor: pointer;
