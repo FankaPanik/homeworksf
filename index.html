@@ -21,20 +21,20 @@
                 </div>
                 <div class="menu">
                     <ul class="menu__item">
-                        <li class="menu__item-link" href="#">HOME</li>
-                        <li class="menu__item-link" href="#">PROJECTS</li>
-                        <li class="menu__item-link" href="#">MEASUREMENT</li>
-                        <li class="menu__item-link" href="#">TEAM</li>
-                        <li class="menu__item-link" href="#">REVIEWS</li>
-                        <li class="menu__item-link" href="#">CONTACTS</li>
+                        <li class="menu__item-link"><a href="#">home</a></li>
+                        <li class="menu__item-link"><a href="#projects">progects</a></li>
+                        <li class="menu__item-link"><a href="#measurement">measurement</a></li>
+                        <li class="menu__item-link"><a href="#team">team</a></li>
+                        <li class="menu__item-link"><a href="#reviews">reviews</a></li>
+                        <li class="menu__item-link"><a href="#contacts">contacts</a></li>
                     </ul>
                 </div>
                 <div class="navbar__num">
                     <a href="#">+7 (928) 768-32-39</a>
                 </div>
                 <div class="navbar__button">
-                <button class="button " href="#">
-                    Request a call
+                    <button class="button " href="#">
+                        Request a call
                     </button>
                 </div>
             </div>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="projects__wrapper">
                 <div class="projects__item-left">
@@ -135,7 +135,7 @@
     </section>
     <section class="control">
         <div class="container container-control">
-           <div class="titleIcon titleIcon-control">
+            <div class="titleIcon titleIcon-control">
                 <h3 class="titleIcon__title">
                     online control
                 </h3>
@@ -162,8 +162,7 @@
                         </div>
                         <div class="row__item">
                             <span class="span feedback_span">Phone</span>
-                            <input class="input feedback_input" type="tel" required
-                            pattern="[0-9]{5,11}" placeholder="Your phone number:">
+                            <input class="input feedback_input" type="tel" required pattern="[0-9]{5,11}" placeholder="Your phone number:">
                         </div>
                         <input class="button button-submit" type="submit" value="submit">
                     </div>
@@ -176,13 +175,13 @@
                         </label>
                     </div>
                     <button class="button button-submit-phone">
-                    submit
+                        submit
                     </button>
                 </form>
             </div>
         </div>
     </section>
-    <section class="types">
+    <section class="measurement" id="measurement">
         <div class="container">
             <div class="titleIcon">
                 <h3 class="titleIcon__title titleIcon__title-dark">
@@ -192,14 +191,16 @@
                     <img src="img/icons/instr.svg" alt="">
                 </div>
             </div>
-            <div class="types__wrapper">
-                <div class="types__item">
-                    <img src="img/photo/types1.jpg" alt="">
-                    <div class="types__info">
-                        <h5 class="types__info-title">
+            <div class="cards__row">
+                <div class="card__item">
+                    <div class="card-wrapper">
+                        <img src="img/photo/types1.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h5 class="card__info-title">
                             Redecorating
                         </h5>
-                        <ul class="types-list">
+                        <ul class="card-list">
                             <li>Dismantling of old coatings</li>
                             <li>Wallpapering</li>
                             <li>Painting walls and ceilings</li>
@@ -208,18 +209,20 @@
                             <li>Replacing sockets and switches</li>
                             <li>Replacing doors</li>
                         </ul>
-                        <div class="types-from">
+                        <div class="card-from">
                             from 900 rub / m<sup>2</sup>
                         </div>
                     </div>
                 </div>
-                <div class="types__item">
-                    <img src="img/photo/types2.jpg" alt="">
-                    <div class="types__info">
-                        <h5 class="types__info-title">
+                <div class="card__item">
+                    <div class="card-wrapper">
+                        <img src="img/photo/types2.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h5 class="card__info-title">
                             Overhaul
                         </h5>
-                        <ul class="types-list">
+                        <ul class="card-list">
                             <li>Dismantling of old coatings</li>
                             <li>Wallpapering</li>
                             <li>Painting walls and ceilings</li>
@@ -228,18 +231,20 @@
                             <li>Replacing sockets and switches</li>
                             <li>Replacing doors</li>
                         </ul>
-                        <div class="types-from">
+                        <div class="card-from">
                             from 1800 rub / m<sup>2</sup>
                         </div>
                     </div>
                 </div>
-                <div class="types__item">
-                    <img src="img/photo/types3.jpg" alt="">
-                    <div class="types__info">
-                        <h5 class="types__info-title">
+                <div class="card__item">
+                    <div class="card-wrapper">
+                        <img src="img/photo/types3.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h5 class="card__info-title">
                             Designer Repair
                         </h5>
-                        <ul class="types-list">
+                        <ul class="card-list">
                             <li>Dismantling of old coatings</li>
                             <li>Wallpapering</li>
                             <li>Painting walls and ceilings</li>
@@ -248,7 +253,7 @@
                             <li>Replacing sockets and switches</li>
                             <li>Replacing doors</li>
                         </ul>
-                        <div class="types-from">
+                        <div class="card-from">
                             from 4000 rub / m<sup>2</sup>
                         </div>
                     </div>
@@ -301,16 +306,16 @@
                             <div class="checkbox call__checkbox">
                                 <div class="checkbox-item">
                                     <input type="checkbox" id="call__checkbox-id">
-                                <label for="call__checkbox-id"><span class="checkbox-description 
+                                    <label for="call__checkbox-id"><span class="checkbox-description 
                            call-description">
-                                        I agree to the processing of personal data
-                                    </span>
-                                     </label>
+                                            I agree to the processing of personal data
+                                        </span>
+                                    </label>
                                 </div>
-                                </div>
-                                <button class="button button-submit button-submit-call">
-                               Call the measurer
-                              </button>
+                            </div>
+                            <button class="button button-submit button-submit-call">
+                                Call the measurer
+                            </button>
                         </form>
                     </div>
 
@@ -330,9 +335,8 @@
                         We realize your wildest fantasies
                     </h3>
                     <ul class="work__col-list">
-                        <a href="#">
-                            <li>American classic</li>
-                        </a>
+                        <li><a href="#">American classic</a></li>
+
                         <a href="#">
                             <li>Empire</li>
                         </a>
@@ -385,45 +389,49 @@
     </section>
     <section class="price">
         <div class="container">
-           <div class="titleIcon">
+            <div class="titleIcon">
                 <h3 class="titleIcon__title titleIcon__title-dark">
-                     design project
+                    design project
                 </h3>
                 <div class="titleIcon__icon">
-                     <img src="img/icons/pencils.svg" alt="pencils">
+                    <img src="img/icons/pencils.svg" alt="pencils">
                 </div>
             </div>
-                <div class="price__text">
-                    Design project not only helps to make the repair of your apartment more modern,
-                    but also significantly reduces the cost of materials and reduces the time of repair work.
-                </div>
-           
+            <div class="price__text">
+                Design project not only helps to make the repair of your apartment more modern,
+                but also significantly reduces the cost of materials and reduces the time of repair work.
+            </div>
 
-            <div class="types__wrapper">
-                <div class="types__item">
-                    <img src="img/photo/price1.jpg" alt="">
-                    <div class="types__info">
-                        <h5 class="types__info-title">
+
+            <div class="cards__row ">
+                <div class="card__item">
+                    <div class="card-wrapper">
+                        <img src="img/photo/price1.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h5 class="card__info-title">
                             Mini
                         </h5>
-                        <ul class="types-list">
+                        <ul class="card-list">
                             <li>Measurement drawing</li>
                             <li>Redevelopment</li>
                             <li>Layout of furniture</li>
                             <li>Plumbing plan. equipment</li>
                         </ul>
-                        <div class="types-from">
+                        <div class="card-from">
                             150 rub / m<sup>2</sup>
                         </div>
                     </div>
                 </div>
-                <div class="types__item">
-                    <img src="img/photo/price2.jpg" alt="">
-                    <div class="types__info">
-                        <h5 class="types__info-title">
+                <div class="card__item">
+                    <div class="card-wrapper">
+                        <img src="img/photo/price2.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h5 class="card__info-title">
                             Standard
                         </h5>
-                        <ul class="types-list">
+                        <ul class="card-list">
                             <li>Measurement drawing</li>
                             <li>Redevelopment</li>
                             <li>Layout of furniture</li>
@@ -432,19 +440,21 @@
                             <li>Electricians plan</li>
                             <li>Lighting plan</li>
                         </ul>
-                        <div class="types-from">
+                        <div class="card-from">
                             400 rub / m<sup>2</sup>
                         </div>
                     </div>
                 </div>
-                <div class="types__item">
-                    <img src="img/photo/price3.jpg" alt="">
-                    <div class="types__info">
-                        <h5 class="types__info-title">
+                <div class="card__item">
+                    <div class="card-wrapper">
+                        <img src="img/photo/price3.jpg" alt="">
+                    </div>
+                    <div class="card__info">
+                        <h5 class="card__info-title">
                             Full
                         </h5>
 
-                        <ul class="types-list">
+                        <ul class="card-list">
                             <li>Measurement drawing</li>
                             <li>Redevelopment</li>
                             <li>Layout of furniture</li>
@@ -458,7 +468,7 @@
                             <li>Departure for a selection of materials</li>
                             <li>Furniture selection</li>
                         </ul>
-                        <div class="types-from">
+                        <div class="card-from">
                             900 rub / m<sup>2</sup>
                         </div>
                     </div>
@@ -491,263 +501,263 @@
                 </div>
                 <div class="goal__col-right">
                     <div class="sell__wrapper">
-                        <div class="sell">
+                        <a href="#" class="sell">
                             <div class="sell-num">01</div>
                             <div class="sell-text">
                                 Departure to room measurements
                             </div>
-                        </div>
-                        <div class="sell">
+                        </a>
+                        <a href="#" class="sell">
                             <div class="sell-num">02</div>
                             <div class="sell-text">
                                 Compilation estimates
                             </div>
-                        </div>
-                        <div class="sell">
+                        </a>
+                        <a href="#" class="sell">
                             <div class="sell-num">03</div>
                             <div class="sell-text">
                                 Development project design
                             </div>
-                        </div>
-                        <div class="sell">
+                        </a>
+                        <a href="#" class="sell">
                             <div class="sell-num">04</div>
                             <div class="sell-text">
                                 Purchasing Supplies
                             </div>
-                        </div>
-                        <div class="sell">
+                        </a>
+                        <a href="#" class="sell">
                             <div class="sell-num">05</div>
                             <div class="sell-text">
                                 Repair finishing work
                             </div>
-                        </div>
-                        <div class="sell">
+                        </a>
+                        <a href="#" class="sell">
                             <div class="sell-num">06</div>
                             <div class="sell-text">
                                 Acceptance-delivery of works
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <img class="goal__photo" src="img/photo/goal.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
-           <div class="titleIcon">
+            <div class="titleIcon">
                 <h3 class="titleIcon__title">
-                     our team
+                    our team
                 </h3>
                 <div class="titleIcon__icon">
-                     <img src="img/icons/team.svg" alt="team">
+                    <img src="img/icons/team.svg" alt="team">
                 </div>
             </div>
-                <div class="price__text team__text">
-                    Our team has helped to become happier for more than
-                    500 families and we are not going to stop
+            <div class="price__text team__text">
+                Our team has helped to become happier for more than
+                500 families and we are not going to stop
+            </div>
+        </div>
+        <div class="team__wrapper">
+            <div class="team__item">
+                <div class="team__photo">
+                    <img src="img/photo/team1.jpg" alt="team">
+                </div>
+                <div class="team__icon">
+                    <img src="img/icons/idea.svg" alt="idea">
+                </div>
+                <div class="team__badge">
+                    <p class="team__name">
+                        Dmitry Tulyakov
+                    </p>
+                    <p class="team__position">
+                        Project manager
+                    </p>
+                    <p class="team__work-experience">
+                        Work experience 8 years
+                    </p>
                 </div>
             </div>
-            <div class="team__wrapper">
-                <div class="team__item">
-                    <div class="team__photo">
-                        <img src="img/photo/team1.jpg" alt="team">
-                    </div>
-                    <div class="team__icon">
-                        <img src="img/icons/idea.svg" alt="idea">
-                    </div>
-                    <div class="team__badge">
-                        <p class="team__name">
-                            Dmitry Tulyakov
-                        </p>
-                        <p class="team__position">
-                            Project manager
-                        </p>
-                        <p class="team__work-experience">
-                            Work experience 8 years
-                        </p>
-                    </div>
+            <div class="team__item">
+                <div class="team__photo">
+                    <img src="img/photo/team2.jpg" alt="team">
                 </div>
-                <div class="team__item">
-                    <div class="team__photo">
-                        <img src="img/photo/team2.jpg" alt="team">
-                    </div>
-                    <div class="team__icon">
-                        <img src="img/icons/pen.svg" alt="pen">
-                    </div>
-                    <div class="team__badge">
-                        <p class="team__name">
-                            Larisa Kotlyarova
-                        </p>
-                        <p class="team__position">
-                            Designer
-                        </p>
-                        <p class="team__work-experience">
-                            Work experience 6 years
-                        </p>
-                    </div>
+                <div class="team__icon">
+                    <img src="img/icons/pen.svg" alt="pen">
                 </div>
-                <div class="team__item">
-                    <div class="team__photo">
-                        <img src="img/photo/team3.jpg" alt="team">
-                    </div>
-                    <div class="team__icon">
-                        <img src="img/icons/bag.svg" alt="bag">
-                    </div>
-                    <div class="team__badge">
-                        <p class="team__name">
-                            Alexey Efimov
-                        </p>
-                        <p class="team__position">
-                            Foreman
-                        </p>
-                        <p class="team__work-experience">
-                            Work experience 12 years
-                        </p>
-                    </div>
+                <div class="team__badge">
+                    <p class="team__name">
+                        Larisa Kotlyarova
+                    </p>
+                    <p class="team__position">
+                        Designer
+                    </p>
+                    <p class="team__work-experience">
+                        Work experience 6 years
+                    </p>
                 </div>
             </div>
-            <div class="control__text team_control-text">
-                Each employee of our company is a qualified full-time specialist
-                with work experience of 6 years.
-                We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.
+            <div class="team__item">
+                <div class="team__photo">
+                    <img src="img/photo/team3.jpg" alt="team">
+                </div>
+                <div class="team__icon">
+                    <img src="img/icons/bag.svg" alt="bag">
+                </div>
+                <div class="team__badge">
+                    <p class="team__name">
+                        Alexey Efimov
+                    </p>
+                    <p class="team__position">
+                        Foreman
+                    </p>
+                    <p class="team__work-experience">
+                        Work experience 12 years
+                    </p>
+                </div>
             </div>
+        </div>
+        <div class="control__text team_control-text">
+            Each employee of our company is a qualified full-time specialist
+            with work experience of 6 years.
+            We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.
+        </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
-           <div class="titleIcon">
+            <div class="titleIcon">
                 <h3 class="titleIcon__title titleIcon__title-dark">
-                      our clients
+                    our clients
                 </h3>
                 <div class="titleIcon__icon">
-                      <img src="img/icons/hend.svg" alt="hend">
+                    <img src="img/icons/hend.svg" alt="hend">
                 </div>
             </div>
-                <div class="price__text">
-                    80% of our customers recommend us to their<br>friends and family.
-                </div>
+            <div class="price__text">
+                80% of our customers recommend us to their<br>friends and family.
             </div>
-            <div class="reviews__wrapper">
-                <div class="reviews__item">
-                    <div class="reviews__item-header">
-                        <img class="client__photo" src="img/photo/client1.jpg" alt="client">
-                        <p class="reviews__client-name">
-                            Fedosova Maria Konstantinovna
-                        </p>
-                    </div>
-                    <div class="reviews__text">
-                        I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach.
-                        The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
-                    </div>
-                    <div class="reviews__area-time">
-                        <div class="area">
-                            <img class="reviews-icon" src="img/icons/area.svg" alt="area">
-                            <span class="area-info">
-                                40 m<sup>2</sup>
-                            </span>
-                        </div>
-                        <div class="time">
-                            <img class="reviews-icon" src="img/icons/time.svg" alt="time">
-                            <span class="area-info">
-                                48 days
-                            </span>
-                        </div>
-                    </div>
+        </div>
+        <div class="reviews__wrapper">
+            <div class="reviews__item">
+                <div class="reviews__item-header">
+                    <img class="client__photo" src="img/photo/client1.jpg" alt="client">
+                    <p class="reviews__client-name">
+                        Fedosova Maria Konstantinovna
+                    </p>
                 </div>
-                <div class="reviews__item">
-                    <div class="reviews__item-header">
-                        <img class="client__photo" src="img/photo/client2.jpg" alt="client">
-                        <p class="reviews__client-name">
-                            Afanasyev Sergey Alexandrovich
-                        </p>
-                    </div>
-                    <div class="reviews__text">
-                        I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach.
-                        The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
-
-
-                    </div>
-                    <div class="reviews__area-time">
-                        <div class="area">
-                            <img class="reviews-icon" src="img/icons/area.svg" alt="area">
-                            <span class="area-info">
-                                90 m<sup>2</sup>
-                            </span>
-                        </div>
-                        <div class="time">
-                            <img class="reviews-icon" src="img/icons/time.svg" alt="time">
-                            <span class="area-info">
-                                128 days
-                            </span>
-                        </div>
-                    </div>
+                <div class="reviews__text">
+                    I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach.
+                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
                 </div>
-                <div class="reviews__item">
-                    <div class="reviews__item-header">
-                        <img class="client__photo" src="img/photo/client3.jpg" alt="client">
-                        <p class="reviews__client-name">
-                            Kiriev Egor Leonidovich
-                        </p>
+                <div class="reviews__area-time">
+                    <div class="area">
+                        <img class="reviews-icon" src="img/icons/area.svg" alt="area">
+                        <span class="area-info">
+                            40 m<sup>2</sup>
+                        </span>
                     </div>
-                    <div class="reviews__text">
-                        I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach.
-                        The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
-
-                    </div>
-                    <div class="reviews__area-time">
-                        <div class="area">
-                            <img class="reviews-icon" src="img/icons/area.svg" alt="area">
-                            <span class="area-info">
-                                56 m<sup>2</sup>
-                            </span>
-                        </div>
-                        <div class="time">
-                            <img class="reviews-icon" src="img/icons/time.svg" alt="time">
-                            <span class="area-info">
-                                86 days
-                            </span>
-                        </div>
+                    <div class="time">
+                        <img class="reviews-icon" src="img/icons/time.svg" alt="time">
+                        <span class="area-info">
+                            48 days
+                        </span>
                     </div>
                 </div>
             </div>
+            <div class="reviews__item">
+                <div class="reviews__item-header">
+                    <img class="client__photo" src="img/photo/client2.jpg" alt="client">
+                    <p class="reviews__client-name">
+                        Afanasyev Sergey Alexandrovich
+                    </p>
+                </div>
+                <div class="reviews__text">
+                    I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach.
+                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+
+
+                </div>
+                <div class="reviews__area-time">
+                    <div class="area">
+                        <img class="reviews-icon" src="img/icons/area.svg" alt="area">
+                        <span class="area-info">
+                            90 m<sup>2</sup>
+                        </span>
+                    </div>
+                    <div class="time">
+                        <img class="reviews-icon" src="img/icons/time.svg" alt="time">
+                        <span class="area-info">
+                            128 days
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="reviews__item-header">
+                    <img class="client__photo" src="img/photo/client3.jpg" alt="client">
+                    <p class="reviews__client-name">
+                        Kiriev Egor Leonidovich
+                    </p>
+                </div>
+                <div class="reviews__text">
+                    I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Great thanks i express the project to georgia for its professionalism and approach.
+                    The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.
+
+                </div>
+                <div class="reviews__area-time">
+                    <div class="area">
+                        <img class="reviews-icon" src="img/icons/area.svg" alt="area">
+                        <span class="area-info">
+                            56 m<sup>2</sup>
+                        </span>
+                    </div>
+                    <div class="time">
+                        <img class="reviews-icon" src="img/icons/time.svg" alt="time">
+                        <span class="area-info">
+                            86 days
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="questions">
+    <section class="questions" id="contacts">
         <div class="container questions__container">
-           <div class="questions__wrapper">
-               <div class="work_bg"></div>
-            <div class="form__wrapper">
-               <h5 class="titleIcon__title">
-                      have any questions?
-                </h5>
-                <form action="" class="questions-form">
-                    <div class="row">
-                        <div class="row__item">
-                            <span class="span call__span">Name</span>
-                            <input class="input-card questions__input" type="text" placeholder="What is your name:">
+            <div class="questions__wrapper">
+                <div class="work_bg"></div>
+                <div class="form__wrapper">
+                    <h5 class="titleIcon__title">
+                        have any questions?
+                    </h5>
+                    <form action="" class="questions-form">
+                        <div class="row">
+                            <div class="row__item">
+                                <span class="span call__span">Name</span>
+                                <input class="input-card questions__input" type="text" placeholder="What is your name:">
+                            </div>
+                            <div class="row__item">
+                                <span class="span call__span">Phone</span>
+                                <input class="input-card questions__input" type="tel" placeholder="Your phone number:">
+                            </div>
                         </div>
-                        <div class="row__item">
-                            <span class="span call__span">Phone</span>
-                            <input class="input-card questions__input" type="tel" placeholder="Your phone number:">
+                        <div class="row__item row__item-phone">
+                            <span class="span call__span">Question</span>
+                            <input class="input-card text__input" type="text" placeholder="I want to know:">
                         </div>
-                    </div>
-                    <div class="row__item row__item-phone">
-                        <span class="span call__span">Question</span>
-                        <input class="input-card text__input" type="text" placeholder="I want to know:">
-                    </div>
-                    <div class="checkbox questions-checkbox">
-                        <input type="checkbox" id="questions-checkbox-id">
-                        <label for="questions-checkbox-id"><span class="checkbox-description questions-description">
-                                I agree to the processing of personal data
-                            </span>
-                        </label>
-                        <button class="button button-submit button-submit-questions">
-                        Submit
-                        </button>
-                    </div>
-                </form>
+                        <div class="checkbox questions-checkbox">
+                            <input type="checkbox" id="questions-checkbox-id">
+                            <label for="questions-checkbox-id"><span class="checkbox-description questions-description">
+                                    I agree to the processing of personal data
+                                </span>
+                            </label>
+                            <button class="button button-submit button-submit-questions">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-           </div>
-            
+
         </div>
     </section>
     <section class="map">
@@ -759,15 +769,15 @@
                         Decorum Tel +7 (928) 768 32 29</h6>
                     <div class="map-icon">
                         <a href="#"><img src="img/icons/mail.svg" alt="mail"></a>
-                        </div>
-                        <div class="map-icon">
+                    </div>
+                    <div class="map-icon">
                         <a href="#"><img src="img/icons/instagram.svg" alt="instagram"></a>
-                </div>
-                <div class="map__item map__item-img">
-                    <img src="img/photo/map.jpg" alt="">
+                    </div>
+                    <div class="map__item map__item-img">
+                        <img src="img/photo/map.jpg" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <footer class="footer">
@@ -777,21 +787,21 @@
                     IC "Repair Design Project"
                 </div>
                 <div class="menu">
-                      <ul class="menu__item">
-                        <li class="menu__item-link" href="#">HOME</li>
-                        <li class="menu__item-link" href="#">PROJECTS</li>
-                        <li class="menu__item-link" href="#">MEASUREMENT</li>
-                        <li class="menu__item-link" href="#">TEAM</li>
-                        <li class="menu__item-link" href="#">REVIEWS</li>
-                        <li class="menu__item-link" href="#">CONTACTS</li>
+                    <ul class="menu__item">
+                        <li class="menu__item-link"><a href="#">HOME</a></li>
+                        <li class="menu__item-link"><a href="#">PROJECTS</a></li>
+                        <li class="menu__item-link"><a href="#">MEASUREMENT</a></li>
+                        <li class="menu__item-link"><a href="#">TEAM</a></li>
+                        <li class="menu__item-link"><a href="#">REVIEWS</a></li>
+                        <li class="menu__item-link"><a href="#">CONTACTS</a></li>
                     </ul>
                 </div>
                 <div class="navbar__num">
                     <a href="#">+7 (928) 768-32-39</a>
                 </div>
                 <div class="navbar__button">
-                <button class="button" href="#">
-                    Request a call
+                    <button class="button" href="#">
+                        Request a call
                     </button>
                 </div>
             </div>
