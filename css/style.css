@@ -27,9 +27,14 @@ body {
 .call__input:focus,
 .questions__input:focus,
 .text__input:focus{
-    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom:  1px solid rgba(255, 255, 255, 0.6);
 }
 /*.........................navbar...................*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+}
 .container_navbar {
     width: 1400px;
     margin: 0 auto;
@@ -287,21 +292,21 @@ body {
     transform: translate(-50%, -20%);
 }
 
-.titleIcon {
+.title-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.titleIcon-control {
+.title-icon-control {
     position: absolute;
     bottom: 100%;
     left: 50%;
     transform: translate(-50%, -5%);
 }
 
-.titleIcon__title {
+.title-icon__title {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     font-size: 20px;
@@ -312,13 +317,13 @@ body {
     margin-bottom: 20px;
 }
 
-.titleIcon__icon {
+.title-icon__icon {
     position: relative;
     text-align: center;
     display: inline-block;
 }
 
-.titleIcon__icon::after {
+.title-icon__icon::after {
     content: "";
     background: #E3B873;
     width: 32px;
@@ -329,7 +334,7 @@ body {
     transform: translateX(50%);
 }
 
-.titleIcon__icon::before {
+.title-icon__icon::before {
     content: "";
     background: #E3B873;
     width: 32px;
@@ -500,7 +505,7 @@ input:checked + label:before {
     margin-bottom: 150px;
 }
 
-.titleIcon__title-dark {
+.title-icon__title-dark {
     color: #181818;
 }
 
@@ -908,7 +913,7 @@ input:checked + label:before {
 
 .team__wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 140px auto;
 }
 
@@ -982,7 +987,7 @@ input:checked + label:before {
 
 .reviews__wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .reviews__item {
