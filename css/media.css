@@ -314,12 +314,8 @@
         max-width: 90%;
     }
 
-    .reviews__item {
+    .reviews__item:last-child {
         margin-top: 100px;
-    }
-
-    .reviews__item:first-child {
-        margin-top: 0;
     }
 
     .questions__wrapper {
@@ -360,7 +356,11 @@
     }
 }
 
-
+@media screen and (max-width: 760px) {
+    .reviews__item{
+        margin-top: 100px;
+    }
+}
 @media screen and (max-width: 520px) {
     .logo,
     .navbar__num a {

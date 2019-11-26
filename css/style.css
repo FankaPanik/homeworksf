@@ -912,6 +912,7 @@ input:checked + label:before {
 }
 
 .team__wrapper {
+    max-width: 1400px;
     display: flex;
     justify-content: space-around;
     margin: 140px auto;
@@ -986,8 +987,10 @@ input:checked + label:before {
 }
 
 .reviews__wrapper {
+    max-width: 1400px;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .reviews__item {
