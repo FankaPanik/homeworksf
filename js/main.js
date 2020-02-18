@@ -1,3 +1,6 @@
+let slides = document.getElementsByClassName("projects__item");
+let dots = document.getElementsByClassName("slider-dots_item");
+let title = document.getElementsByClassName("title pr__tab");
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -11,12 +14,10 @@ let minusSlide = () => (showSlides(slideIndex -= 1));
 let currentSlide = (n) => (showSlides(slideIndex = n));
 
 
+
 /* Основная функция слайдера */
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("projects__item");
-    let dots = document.getElementsByClassName("slider-dots_item");
-    let title = document.getElementsByClassName("title pr__tab");
     
     if (n > slides.length) {
       slideIndex = 1
